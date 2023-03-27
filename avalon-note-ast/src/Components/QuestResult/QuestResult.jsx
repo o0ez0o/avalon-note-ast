@@ -4,17 +4,41 @@ import VoteResult from './Components/VoteResult.jsx';
 
 
 
+
 export function QuestResult(props) {
  
   return (
     <div>
-      <TeamMembers/>
-      <VoteResult style = {{
-        marginLeft: '80px',
-
-      }
-      }></VoteResult>
-
+        <div>
+        <TeamMembers/>
+        <VoteResult style = {{
+        }
+        }></VoteResult>
+        </div>
+        <div>
+        <TeamMembers/>
+        <VoteResult style = {{
+        }
+        }></VoteResult>
+        </div>
+        <div>
+        <TeamMembers/>
+        <VoteResult style = {{
+        }
+        }></VoteResult>
+        </div>
+        <div>
+        <TeamMembers/>
+        <VoteResult style = {{
+        }
+        }></VoteResult>
+        </div>
+        <div>
+        <TeamMembers/>
+        <VoteResult style = {{
+        }
+        }></VoteResult>
+        </div>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import VotedPlayers from './VotedPlayers.jsx';
 import "../QuestResult.css";
-import "@fontsource/poppins";
+
 
 const VoteResult = () => {
   const containerStyles = {

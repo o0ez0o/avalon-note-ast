@@ -2,7 +2,6 @@ import React from 'react';
 import TeamLeader from './TeamLeader.jsx';
 import TeamMember from './TeamMember.jsx';
 
-
 const TeamMembers = () => {
   const containerStyles = {
     display: 'flex',
@@ -11,7 +10,7 @@ const TeamMembers = () => {
     position: 'relative',
     height: '80px',
     margin: '0 auto',
-    marginTop: '40px',
+    marginTop: '16px',
     gap: '24px',
   };
 
