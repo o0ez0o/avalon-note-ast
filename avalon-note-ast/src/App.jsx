@@ -1,5 +1,6 @@
 import React from 'react';
-import RoundNote from "./RoundNote.jsx"
+import RoundNote from "./Components/RoundNote/RoundNote.jsx"
+import QuestResult from './Components/QuestResult/QuestResult.jsx';
 
 
 
@@ -22,6 +23,7 @@ export function App(props) {
   return (
     <div>
       <RoundNote onSubmit = {onSubmit}></RoundNote>
+      <QuestResult/>
 
     </div>
   )
