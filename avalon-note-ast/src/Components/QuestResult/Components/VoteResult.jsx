@@ -9,9 +9,9 @@ const VoteResult = () => {
     alignItems: 'center',
     justifyContent: 'left',
     position: 'relative',
-    height: '30px',
+    height: '34px',
     margin: '0 auto',
-    marginTop: '0px',
+    marginBottom: '16px',
     marginLeft: '86px',
     gap: '24px',
   };

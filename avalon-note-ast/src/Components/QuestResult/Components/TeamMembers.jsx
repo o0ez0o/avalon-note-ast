@@ -10,7 +10,7 @@ const TeamMembers = () => {
     position: 'relative',
     height: '80px',
     margin: '0 auto',
-    marginTop: '16px',
+    marginTop: '0px',
     gap: '24px',
   };
 
