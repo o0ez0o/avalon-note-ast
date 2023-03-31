@@ -1,0 +1,103 @@
+.clip {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    width: 70px;
+    min-width: 80px;
+    height: 49px;
+    background-color:none;
+    outline-style: solid;
+    outline-color: #ffffff;
+    outline-width: 1px;
+    border-radius: 37px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+
+}
+
+.clip.default {
+    background-color:none;
+    outline-style: solid;
+    outline-color: #ffffff;
+    outline-width: 1px;
+}
+
+.clip.isSelected {
+    background-color: #4B5768;
+    outline-style: solid;
+    outline-color: #ffffff;
+    outline-width: 5px;
+
+}
+
+.clip:hover {
+    background-color: #4B5768;
+    cursor: pointer;
+}
+
+.roundNotePanel {
+    background-color: #252C34;
+    width: wrap;
+    max-width: 414px;
+    height: wrap;
+    padding: 24px;
+    gap: 24px;
+    flex-direction: column,
+ 
+   
+}
+
+.roundNoteTitle {
+    width: wrap;
+    height: wrap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  
+  .clipbarContainer {
+    display: block;
+  }
+  
+  .submitButton {
+    margin-top: 16px;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align: center;
+    padding: 14px 20px;
+    gap: 8px;
+    width: 240px;
+    height: 64px;
+    background: #ffffff;
+    border-radius: 30px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    disable: "ture";
+  }
+  
+  .buttonText {
+    width: wrap;
+    height: 21px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #252C34;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  

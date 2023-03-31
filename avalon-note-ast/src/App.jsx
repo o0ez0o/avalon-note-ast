@@ -1,6 +1,7 @@
 import React from 'react';
 import RoundNote from "./Components/RoundNote/RoundNote.jsx"
-import QuestResult from './Components/QuestResult/QuestResult.jsx';
+import QuestPanel from './Components/QuestPanel/QuestPanel.jsx';
+import Header from './Components/Header/Header.jsx';
 
 
 
@@ -21,13 +22,15 @@ export function App(props) {
   //   </div>
   // );
   return (
-    <div>
+    <div style={{display: 'flex', flexDirection: "row", gap: '36px', width: 'wrap'}}>
+      <div>
+        <Header/>
+        <QuestPanel/>
+      </div>  
       <RoundNote onSubmit = {onSubmit}></RoundNote>
-      <QuestResult/>
+      
 
     </div>
   )
 }
 export default App
-// Log to console
-// console.log('Hello console')

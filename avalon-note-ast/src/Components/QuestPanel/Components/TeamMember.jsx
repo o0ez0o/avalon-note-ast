@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../QuestResult.css"; // import the CSS file for styling
+import "../QuestPanel.css"; // import the CSS file for styling
 
 function TeamMember() {
   const [status, setStatus] = useState("default"); // set initial state to "default"

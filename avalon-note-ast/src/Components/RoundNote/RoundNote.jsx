@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import ClipBar from './ClipBar';
+import ClipBar from './Components/ClipBar';
 import "@fontsource/poppins";
+import "./RoundNote.css";
 
 const RoundNote = ({onSubmit}) => {
   const [selected, setSelected] = useState([]);
@@ -55,7 +56,7 @@ const RoundNote = ({onSubmit}) => {
       fontWeight: '600',
       fontSize: '18px',
       lineHeight: '21px',
-      color: '#FFFFFF',
+      color: '#252C34',
       flex: 'none',
       order: '0',
       flexGrow: '0',
@@ -63,50 +64,39 @@ const RoundNote = ({onSubmit}) => {
       paddingLeft: '20px',
     };
 
-  return (
-    <div>
-      <div style={{
-        width: "wrap",
-        height: "28px",
-        fontStyle: "normal",
-        fontWeight: 800,
-        fontSize: "23px",
-        lineHeight: "19px",
-        color: "#252C34",
-        marginBottom: "16px"
-      }}>
-        Round Notes
-      </div>
-      <ClipBar
-        clipbarName="Selected"
-        clipNames={['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'P9', 'P10']}
-        selected={selected}
-        handleClipClick={handleSelect}
-        style={{ 
-          display: 'block'
-          }}
-      />
-      <ClipBar
-        clipbarName="Agreed"
-        clipNames={['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'P9', 'P10']}
+    return (
+      <div className='roundNotePanel'>
+        <div className="roundNoteTitle">
+          Round Notes
+        </div>
+        <ClipBar
+          clipbarName="Selected Players"
+          clipNames={['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']}
+          selected={selected}
+          handleClipClick={handleSelect}
+          className="clipbarContainer"
+        />
+        <ClipBar
+          clipbarName="Agreed Players"
+          clipNames={['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']}
         selected={agreed}
         handleClipClick={handleAgree}
         style={{ display: 'block' }}
-      />
-      {agreed.length >= 5 && (
+        />
+        {agreed.length >= 5 && (
         <ClipBar
           clipbarName="Quest Status"
-          clipNames={['FAILED', 'SUCCEED', 'FAILED x2', 'FAILED x3', 'FAILED x4']}
+          clipNames={['FAIL', 'SUCC', 'Fx2', 'Fx3', 'Fx4']}
           selected={questStatus}
           handleClipClick={handleQuestStatus}
           style={{ display: 'block' }}
-        />
-      )}
+         />
+         )}
         <div style = {{
             alignItems: "center",
             display: "flex",
             justifyContent: "center"
-        }}> 
+           }}> 
           <button
             onClick={handleButtonClick}
             style={{
@@ -121,7 +111,7 @@ const RoundNote = ({onSubmit}) => {
               gap: '8px',
               width: '240px',
               height: '64px',
-              background: '#252C34',
+              background: '#ffffff',
               borderRadius: '30px',
               flex: 'none',
               order: 4,
@@ -129,9 +119,9 @@ const RoundNote = ({onSubmit}) => {
               disable: "ture"
             }}
           > 
-        <p style = {buttonTextStyle}> Submit </p>
-      </button>
-      </div>
+            <p style = {buttonTextStyle}> Submit </p>
+          </button>
+       </div>
     </div>
     
   );

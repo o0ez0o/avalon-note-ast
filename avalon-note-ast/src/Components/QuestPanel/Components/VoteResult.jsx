@@ -1,6 +1,6 @@
 import React from 'react';
 import VotedPlayers from './VotedPlayers.jsx';
-import "../QuestResult.css";
+import "../QuestPanel.css";
 
 
 const VoteResult = () => {

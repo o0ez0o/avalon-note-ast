@@ -61,29 +61,24 @@
 
 // export default Clip;
 
-
-import React from 'react';
+import React, { useState } from "react";
 import "@fontsource/poppins";
+import PropTypes from 'prop-types';
+import "../RoundNote.css"; 
 
 const Clip = ({ name, isSelected, onClick }) => {
-  const clipStyle = {
-    boxSizing: 'border-box',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: '14px 20px',
-    width: 'auto',
-    minWidth: '80px',
-    height: '49px',
-    background: isSelected ? '#EDEFF3' : '#FFFFFF',
-    outline: isSelected ? '5px solid #252C34' : '1px solid #252C34',
-    borderRadius: '37px',
-    flex: 'none',
-    order: '0',
-    flexGrow: '0',
-    cursor: 'pointer',
-  };
+
+
+    const [status, setStatus] = useState("default"); // set initial state to ""
+  
+    const handleClick = () => {
+      if (status === "default") {
+        setStatus("isSelected");
+      } else if (status === "isSelected") {
+        setStatus("default");
+      }
+      onClick ();
+    };
 
   const textStyle = {
     fontFamily: 'Poppins',
@@ -92,7 +87,7 @@ const Clip = ({ name, isSelected, onClick }) => {
     fontWeight: '600',
     fontSize: '18px',
     lineHeight: '21px',
-    color: '#252C34',
+    color: '#ffffff',
     flex: 'none',
     order: '0',
     flexGrow: '0',
@@ -101,10 +96,16 @@ const Clip = ({ name, isSelected, onClick }) => {
   };
 
   return (
-    <div style={clipStyle} onClick={onClick}>
+     <div className={`clip ${status}`} onClick={handleClick}>
       <p style={textStyle}>{name}</p>
     </div>
   );
 };
+
+Clip.propTypes = {
+  name: PropTypes.string.isRequired,
+  isSelected: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired
+}
 
 export default Clip;

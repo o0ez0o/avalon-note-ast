@@ -1,7 +1,5 @@
 import React from "react";
-import "../QuestResult.css"; // import the CSS file for styling
-import { ReactComponent as icon90 } from "./90.svg";
-import { ReactComponent as icon150 } from "./150.svg";
+import "../QuestPanel.css"; // import the CSS file for styling
 
 function svg150() {
     return(
