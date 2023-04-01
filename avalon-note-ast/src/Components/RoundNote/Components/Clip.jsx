@@ -80,24 +80,9 @@ const Clip = ({ name, isSelected, onClick }) => {
       onClick ();
     };
 
-  const textStyle = {
-    fontFamily: 'Poppins',
-    width: 'wrap',
-    height: '21px',
-    fontWeight: '600',
-    fontSize: '18px',
-    lineHeight: '21px',
-    color: '#ffffff',
-    flex: 'none',
-    order: '0',
-    flexGrow: '0',
-    paddingRight: '20px',
-    paddingLeft: '20px',
-  };
-
   return (
      <div className={`clip ${status}`} onClick={handleClick}>
-      <p style={textStyle}>{name}</p>
+      <p>{name}</p>
     </div>
   );
 };

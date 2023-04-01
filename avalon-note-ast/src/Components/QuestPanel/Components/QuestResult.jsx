@@ -11,7 +11,7 @@ export function QuestResult(props) {
  
   return (
     <div style={{display: 'flex', flexDirection: "column", gap: '24px', justifyContent: 'space-between'}}>
-      <div style={{ flexWrap: 'wrap', display: "flex", gap: '48px', justifyContent: 'space-between' }}>
+      <div style={{ flexWrap: 'wrap', display: "flex", gap: '48px', justifyContent: 'space-between', width:'fill' }}>
         <QuestIcon status={"protected"} numberOfPlayer = {5} />
         <div>
           

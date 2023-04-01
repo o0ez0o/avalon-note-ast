@@ -1,7 +1,7 @@
 .teamMember {
     position: relative;
-    width: wrap;
-    height: wrap;
+    width: auto;
+    height: auto;
     font-style: normal;
     font-family: 'Poppins';
     font-weight: 600;

@@ -23,7 +23,7 @@ export function App(props) {
   // );
   return (
     <div style={{display: 'flex', flexDirection: "row", gap: '36px', width: 'wrap'}}>
-      <div>
+      <div style={{flex: 1}}>
         <Header/>
         <QuestPanel/>
       </div>  
