@@ -1,58 +1,56 @@
 .overlay {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .PopUpFrame {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-    background: #ffffff;
-    border-radius: 36px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 100px;
-    min-width: 320px;
-    max-width: 1262px;
-    gap: 36px;
-  }
-  
-  .PopUpFrame h1 {
-    width: fill;
-    text-align: center;  
-    height: 48px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: -0.02em;
-    color: #252c34;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0;
-  }
-  
-  .PopUpFrame-close {
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    right: 30px;
-    top: 30px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-  }
-  
-  
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PopUpFrame {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  background: #ffffff;
+  border-radius: 36px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 100px;
+  min-width: 320px;
+  max-width: 1262px;
+  gap: 36px;
+}
+
+.PopUpFrame h1 {
+  width: fill;
+  text-align: center;
+  height: wrap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  color: #252c34;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0;
+}
+
+.PopUpFrame-close {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  right: 30px;
+  top: 30px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}

@@ -54,9 +54,12 @@
 }
 
 .roundNotePanel {
+  position: fixed;
+  top: 0;
+  right: 0;
   background-color: #252c34;
   min-width: 280px;
-  height: wrap;
+  height: fill;
   padding: 24px;
   gap: 24px;
   flex-direction: column;
