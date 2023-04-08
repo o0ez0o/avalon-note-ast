@@ -6,9 +6,9 @@ function TeamMember() {
 
   const handleClick = () => {
     if (status === "default") {
-      setStatus("good");
-    } else if (status === "good") {
-      setStatus("evil");
+      setStatus("selected");
+    } else if (status === "selected") {
+      setStatus("inTeam");
     } else {
       setStatus("default");
     }

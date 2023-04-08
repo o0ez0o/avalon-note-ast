@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.regular-paragraph {
+  width: wrap;
+  height: 19px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252C34;
+  flex: none;
+  flex-grow: 0;
+  margin: 0;
+}
+

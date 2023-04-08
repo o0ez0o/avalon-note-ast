@@ -1,113 +1,121 @@
 .teamMember {
-    position: relative;
-    width: auto;
-    height: auto;
-    font-style: normal;
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 72px;
-    line-height: 80px;
-    margin: 0px;
-    letter-spacing: -0.04em;
-    color: #252C34;
-  }
-  
-  .teamMember.default {
-    color: #252C34;
-  }
-  
-  .teamMember.good {
-    color: #C5D2F7;
-  }
-  
-  .teamMember.evil {
-    color: #FAC1C1;
-  }
-  
-  .votedPlayers {
-    /* YES: 4 · 5 · 6 · 9 */
-    width: 'wrap';
-    height: 'wrap';
+  position: relative;
+  width: wrap;
+  height: wrap;
+  font-style: thin;
+  font-family: "Poppins";
+  font-weight: 100pt;
+  font-size: 72px;
+  line-height: 80px;
+  margin: 0px;
+  letter-spacing: -0.04em;
+  color: #252c34;
+}
 
-    font-family: 'Poppins';
-    font-style: normal;
-    margin-left: 0px;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
-    /* identical to box height, or 121% */
+.teamMember.default {
+  color: #252c34;
+}
 
-    letter-spacing: -0.02em;
+.teamMember.selected {
+  color: #c5d2f7;
+  font-weight: 1000;
+}
 
-    /* Neutral/800 */
+.teamMember.inTeam {
+  color: #fac1c1;
+  text-decoration-line: underline;
+}
 
-    color: #252C34;
+.votedPlayers {
+  /* YES: 4 · 5 · 6 · 9 */
+  width: "wrap";
+  height: "wrap";
 
+  font-family: "Poppins";
+  font-style: normal;
+  margin-left: 0px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height, or 121% */
 
-    /* Inside auto layout */
+  letter-spacing: -0.02em;
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
+  /* Neutral/800 */
 
-  .questIcon {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    
-  }
-  
-  .svg150 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-  }
-  
-  .svg90 {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 90px;
-    height: 90px;
-  }
-  
-  .roundText {
-    position: absolute;
-    width: 49px;
-    height: 80px;
-    left: calc(50% - 49px/2);
-    top: calc(50% - 80px/2);
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 80px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #252C34;
-  }
-  
-  .line_1 {
-    width: fill;
-    height: 0px;
-    border: 1px solid #252C34;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-  }
+  color: #252c34;
 
-  .line_2 {
-    width: fill;
-    height: 0px;
-    border: 3px solid #252C34;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.votedPlayers.selected {
+  color: #c5d2f7;
+  font-weight: 1000;
+}
+
+.votedPlayers.inTeam {
+  text-decoration-line: underline;
+}
+
+.questIcon {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.svg150 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.svg90 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 90px;
+  height: 90px;
+}
+
+.roundText {
+  position: absolute;
+  width: 49px;
+  height: 80px;
+  left: calc(50% - 49px / 2);
+  top: calc(50% - 80px / 2);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #252c34;
+}
+
+.line_1 {
+  width: fill;
+  height: 0px;
+  border: 1px solid #252c34;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.line_2 {
+  width: fill;
+  height: 0px;
+  border: 3px solid #252c34;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
