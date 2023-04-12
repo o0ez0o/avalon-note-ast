@@ -2,6 +2,7 @@ import React from "react";
 import RoundNote from "./Components/RoundNote/RoundNote.jsx";
 import QuestPanel from "./Components/QuestPanel/QuestPanel.jsx";
 import Header from "./Components/Header/Header.jsx";
+import PlayerStatus from "./Components/PlayerStatus/PlayerStatus.jsx";
 
 export function App(props) {
   const clipNames = [
@@ -46,6 +47,7 @@ export function App(props) {
     >
       <div style={{ flex: 1 }}>
         <Header />
+        <PlayerStatus />
         <QuestPanel />
       </div>
       <RoundNote onSubmit={onSubmit}></RoundNote>

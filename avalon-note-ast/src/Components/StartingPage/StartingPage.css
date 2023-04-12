@@ -115,15 +115,14 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+
   padding: 0px;
-  gap: 360px;
+  gap: 36px;
   position: flex;
-  width: wrap;
+  width: fill;
   height: wrap;
   margin: 0;
-  max-width: 550px;
+  max-width: 380px;
   min-width: 338px;
 
   order: 0;
@@ -133,6 +132,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: fill;
 }
 
 .startingPageHeader {
@@ -141,7 +141,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 50px;
   line-height: 80px;
   letter-spacing: -0.04em;
   color: #252c34;
@@ -186,7 +186,7 @@
 
 .logo {
   position: flex;
-  width: 375.18px;
+  width: 230px;
   height: 191.77px;
   left: 159.47px;
   top: 529.73px;

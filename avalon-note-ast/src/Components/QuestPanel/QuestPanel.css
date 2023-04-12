@@ -109,13 +109,3 @@
   align-self: stretch;
   flex-grow: 0;
 }
-
-.line_2 {
-  width: fill;
-  height: 0px;
-  border: 3px solid #252c34;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}

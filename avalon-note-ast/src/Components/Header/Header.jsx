@@ -97,24 +97,27 @@ const Header = () => {
     );
   };
   return (
-    <div className="header-container">
-      <div className="header-left">
-        <img src={LogoS} alt="LogoS" className="header-logo" />
-        <div className="header-text">Avalon Note Ast.</div>
+    <div>
+      <div className="header-container">
+        <div className="header-left">
+          <img src={LogoS} alt="LogoS" className="header-logo" />
+          <div className="header-text">Avalon Note Ast.</div>
+        </div>
+        <div className="header-right">
+          <div className="header-link">Export Game</div>
+          <PopUp title="About" titleClass={"header-link"} inCardTitle={"About"}>
+            {AboutContent()}
+          </PopUp>
+          <PopUp
+            title="! Restart"
+            titleClass={"header-link red"}
+            inCardTitle={"Restart Game"}
+          >
+            {RestartContent()}
+          </PopUp>
+        </div>
       </div>
-      <div className="header-right">
-        <div className="header-link">Export Game</div>
-        <PopUp title="About" titleClass={"header-link"} inCardTitle={"About"}>
-          {AboutContent()}
-        </PopUp>
-        <PopUp
-          title="! Restart"
-          titleClass={"header-link red"}
-          inCardTitle={"Restart Game"}
-        >
-          {RestartContent()}
-        </PopUp>
-      </div>
+      <div className="line_2"></div>
     </div>
   );
 };
